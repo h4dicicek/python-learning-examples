@@ -3,3 +3,7 @@
 # First of all, determine the current fuel money.
 
 fuel_money_liter = 27.26
+
+# You must get how much fuel(liter) is burned per km from user.
+
+fuel_liter_km = float(input("Please enter how much fuel(liter) is burned per km your car: "))
