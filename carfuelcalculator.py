@@ -11,3 +11,7 @@ fuel_liter_km = float(input("Please enter how much fuel(liter) is burned per km 
 #And you should know how many kilometers to go from the user.
 
 km = int(input("Please enter how many kilometers to go with your car: "))
+
+# Finally you can calculate how much oil money a car must pay.
+
+print("You must pay, {}".format(fuel_money_liter * fuel_liter_km * km))
