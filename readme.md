@@ -10,4 +10,4 @@ Table of content:
     
     - caroilcalculate
     
-    -hypotenusecalculator
+    - hypotenusecalculator
