@@ -5,4 +5,5 @@ Table of content:
     - multiply3num
     - bodymassindex
     - caroilcalculate
-    -hypotenusecalculator
+    - hypotenusecalculator
+    - advancedbodymassindex
