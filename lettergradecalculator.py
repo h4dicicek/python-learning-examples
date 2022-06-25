@@ -43,7 +43,7 @@ print("Your total grade: {}".format(total_grade))
 
 #We use conditions for calculate letter grade.
 
-if (total_grade >= 90):
+if ( 100 >= total_grade >= 90):
     print("Your letter grade AA. Congrats!")
 
 elif ( 90 > total_grade >= 85 ):
@@ -67,5 +67,11 @@ elif ( 65 > total_grade >= 60 ):
 elif ( 60 > total_grade >= 55 ):
     print("Your letter grade FD. Sorry for you!")
 
-elif ( 55 > total_grade ):
+elif ( 55 > total_grade >= 0):
     print("Your letter grade FF. Sorry for you!")
+
+elif ( total_grade > 100):
+    print("Your total grade can't over 100.")
+
+else:
+    print("Your total grade can't under 0.")
