@@ -7,3 +7,4 @@ Table of content:
     - caroilcalculate
     - hypotenusecalculator
     - advancedbodymassindex
+    - lettergradecalculator
