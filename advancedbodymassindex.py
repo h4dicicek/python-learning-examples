@@ -4,4 +4,4 @@
 
 body_weight = float(input("Please enter your body weight(kg): "))
 
-body_height = float(input("Please enter your body height(m): ")
+body_height = float(input("Please enter your body height(m): "))
