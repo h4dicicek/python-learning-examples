@@ -26,3 +26,11 @@ Total grade >=  55 -----> FD
 
 Total grade <  55 -----> FF
 """
+
+#You must take grades from user.
+
+midterm1 = int(input("Please enter your first midterm grade: "))
+
+midterm2 = int(input("Please enter your second midterm grade: "))
+
+final_grade = int(input("Please enter your final grade: "))
