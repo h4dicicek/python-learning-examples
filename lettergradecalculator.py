@@ -34,3 +34,9 @@ midterm1 = int(input("Please enter your first midterm grade: "))
 midterm2 = int(input("Please enter your second midterm grade: "))
 
 final_grade = int(input("Please enter your final grade: "))
+
+#You have to calculate total grade for letter grade.
+
+total_grade = (midterm1 * (3/10)) + (midterm2 * (3/10)) + (final_grade * (4/10))
+
+print("Your total grade: {}".format(total_grade))
