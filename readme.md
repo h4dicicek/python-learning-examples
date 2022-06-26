@@ -19,4 +19,4 @@ Table of content:
 
     - lettergradecalculator
 
-    - geometric shape
+    - geometricshapecalculator
