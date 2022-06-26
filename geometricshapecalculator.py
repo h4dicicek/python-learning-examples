@@ -29,13 +29,13 @@ if ( selected_shape == 1):
     print("Your triangle edge lenghts: {} , {} , {}".format(abs(x),abs(y),abs(z)))
     
     if((x == y and y != z) or (y == z and z != x) or (x == z and z != y)):
-        print("Your triangle is Isosceles Triangle.")
+        print("Your shape is Isosceles Triangle.")
     
     elif(x == y and y == z):
-        print("Your triangle is Equilateral Triangle.")
+        print("Your shape is Equilateral Triangle.")
     
     else:
-        print("Your triangle is normal triangle :).")
+        print("Your shape is normal triangle :).")
 
 elif( selected_shape == 2):
 
