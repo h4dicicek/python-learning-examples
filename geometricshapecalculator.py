@@ -15,3 +15,9 @@ ______________________
 """)
 
 selected_shape =  int(input("Please enter a number: "))
+
+if ( selected_shape == 1):
+    print("Triangle selected by user.")
+    x = int(input("Please enter first edge: "))
+    y = int(input("Please enter second edge: "))
+    z = int(input("Please enter third edge: "))
