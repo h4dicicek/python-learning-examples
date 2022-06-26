@@ -28,3 +28,7 @@ Table of content:
     - armstrongnumbercalculator
 
     - multiplicationtable
+
+  -> Functions
+
+    - perfectnumber 
