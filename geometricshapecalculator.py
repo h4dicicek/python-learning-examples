@@ -21,3 +21,6 @@ if ( selected_shape == 1):
     x = int(input("Please enter first edge: "))
     y = int(input("Please enter second edge: "))
     z = int(input("Please enter third edge: "))
+    
+    #We have to use abs to obtain its absolute value.
+    print("Your triangle edge lenghts: {} , {} , {}".format(abs(x),abs(y),abs(z)))
