@@ -34,6 +34,9 @@ if ( selected_shape == 1):
     elif(x == y and y == z):
         print("Your shape is Equilateral Triangle.")
     
+    elif( x + y < z):
+        print("Your shape is not triangle. Because first edge + second edge have to bigger than third edge.")
+
     else:
         print("Your shape is normal triangle :).")
 
