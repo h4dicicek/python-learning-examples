@@ -6,3 +6,16 @@ number = int(input("Please enter a number: "))
 
 i = 1
 total = 0 
+
+# We have to use loop for find positive divisons
+
+while(i < number):
+    if (number % i  ==0):
+        total += i
+    i += 1
+
+if ( total == number):
+    print("{} is a perfect number.".format(number))
+
+else:
+    print("{} is not a perfect number.".format(number))
