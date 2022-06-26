@@ -24,3 +24,5 @@ Table of content:
   -> Loops
 
     - perfectnumbercalculator
+
+    - armstrongnumbercalculator
