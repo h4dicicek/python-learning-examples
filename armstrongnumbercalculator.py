@@ -7,3 +7,7 @@ number = input("Please enter a number: ")
 number_of_digits = len(number)
 
 number = int(number)
+
+digit = 0
+
+total = 0
