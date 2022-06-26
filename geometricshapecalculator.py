@@ -61,3 +61,6 @@ elif( selected_shape == 2):
 
 else:
     print("Shape type not found!")
+
+### Unfortunately we can't calculate many geometrical shape. Because to calculate that, we have to learn their angle. 
+### We can do this future projects.
