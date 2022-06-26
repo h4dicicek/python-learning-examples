@@ -3,6 +3,7 @@
 # First, we have to know which shape calculate.
 
 from operator import indexOf
+from random import seed
 
 
 print("""
@@ -17,6 +18,7 @@ ______________________
 selected_shape =  int(input("Please enter a number: "))
 
 if ( selected_shape == 1):
+
     print("Triangle selected by user. Please enter the triangle lengths in the order from small to large.")
     x = int(input("Please enter first edge: "))
     y = int(input("Please enter second edge: "))
@@ -24,9 +26,21 @@ if ( selected_shape == 1):
     
     #We have to use abs to obtain its absolute value.
     print("Your triangle edge lenghts: {} , {} , {}".format(abs(x),abs(y),abs(z)))
+    
     if((x == y and y != z) or (y == z and z != x) or (x == z and z != y)):
         print("Your triangle is Isosceles Triangle.")
+    
     elif(x == y and y == z):
         print("Your triangle is Equilateral Triangle.")
+    
     else:
         print("Your triangle is normal triangle :).")
+
+elif( selected_shape == 2):
+
+    print("Rectangle selected by user.")
+
+    a = int(input("Please enter first edge: "))
+    b = int(input("Please enter second edge: "))
+    c = int(input("Please enter third edge: "))
+    d = int(input("Please enter fourth edge: "))
