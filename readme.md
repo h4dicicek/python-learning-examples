@@ -20,3 +20,7 @@ Table of content:
     - lettergradecalculator
 
     - geometricshapecalculator
+
+  -> Loops
+
+    - perfectnumbercalculator
