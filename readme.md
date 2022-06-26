@@ -26,3 +26,5 @@ Table of content:
     - perfectnumbercalculator
 
     - armstrongnumbercalculator
+
+    - multiplicationtable
