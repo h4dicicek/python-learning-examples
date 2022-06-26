@@ -11,3 +11,10 @@ number = int(number)
 digit = 0
 
 total = 0
+
+number2 = number
+
+while (number2 > 0):
+    digit == number2 % 10
+    total += digit ** number_of_digits 
+    number2 //= 10
