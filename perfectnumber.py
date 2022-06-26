@@ -12,3 +12,7 @@ def perfectnumber(number):
             total += i
 
     return total == number
+
+for i in range(1,1001):
+    if (perfectnumber(i)):
+        print("Perfect Number:",i)
