@@ -15,6 +15,11 @@ total = 0
 number2 = number
 
 while (number2 > 0):
-    digit == number2 % 10
+    digit = number2 % 10
     total += digit ** number_of_digits 
     number2 //= 10
+
+if (total == number):
+    print(number,"is an Armstrong Number.")
+else:
+    print(number,"is not an Armstrong Number.")
