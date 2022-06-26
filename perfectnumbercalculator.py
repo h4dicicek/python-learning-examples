@@ -19,3 +19,4 @@ if ( total == number):
 
 else:
     print("{} is not a perfect number.".format(number))
+    
