@@ -4,6 +4,7 @@
 
 from operator import indexOf
 from random import seed
+from re import A
 
 
 print("""
@@ -44,3 +45,6 @@ elif( selected_shape == 2):
     b = int(input("Please enter second edge: "))
     c = int(input("Please enter third edge: "))
     d = int(input("Please enter fourth edge: "))
+
+    #We have to use abs to obtain its absolute value.
+    print("Your rectangle edge lenghts: {} , {} , {} , {}".format(abs(a),abs(b),abs(c),abs(d)))
