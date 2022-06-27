@@ -15,3 +15,10 @@ def greatestcommondivisior(y, x):
             gcd = i
 
     return gcd
+
+# testing function
+
+x = 81
+y = 63
+
+print(greatestcommondivisior(x,y))
