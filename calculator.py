@@ -86,5 +86,8 @@ while True:
     elif (operation == 8):
         x = int(input("Please enter a number: "))
         print(math.log10(x))
-    
-    
+
+    elif (operation == 9):
+        x = int(input("Please enter a number: "))
+        y = int(input("Please enter a number: "))
+        print(math.pow(x,y))
