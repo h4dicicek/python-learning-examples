@@ -41,7 +41,16 @@ Press 14 for calculate cos value in radian
 
 Press 15 for calculate tan value in radian
 
-PRESS 16 FOR QUIT
+PRESS ANOTHER NUMBER FOR QUIT
 ___________________________________________
 
 """)
+
+
+operation = int(input("Please enter a number for select operation: "))
+
+while True:
+    if (operation == 1):
+        x = float(input("Please enter a number: "))
+        y = float(input("Please enter a number: "))
+        print("{} + {} = {}".format(x,y,x+y))
