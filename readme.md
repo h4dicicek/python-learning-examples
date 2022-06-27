@@ -31,4 +31,6 @@ Table of content:
 
   -> Functions
 
-    - perfectnumber 
+    - perfectnumber
+
+    - greatestcommondivisior
