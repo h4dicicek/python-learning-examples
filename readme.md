@@ -36,3 +36,7 @@ Table of content:
     - greatestcommondivisior
 
     - lowestcommonmultiple
+
+  -> Modules
+
+    - calculator 
