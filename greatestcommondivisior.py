@@ -1,0 +1,1 @@
+# This file for calculate greatest common divisior (gcd) between two number.
