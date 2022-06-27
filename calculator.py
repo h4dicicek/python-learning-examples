@@ -69,3 +69,7 @@ while True:
         x = float(input("Please enter a number: "))
         y = float(input("Please enter a number: "))
         print("{} ÷ {} = {}".format(x,y,x/y))
+
+    elif (operation == 5):
+        x = int(input("Please enter a number: "))
+        print(math.fabs(x))
