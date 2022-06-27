@@ -59,3 +59,8 @@ while True:
         x = float(input("Please enter a number: "))
         y = float(input("Please enter a number: "))
         print("{} - {} = {}".format(x,y,x-y))
+    
+    elif (operation == 3):
+        x = float(input("Please enter a number: "))
+        y = float(input("Please enter a number: "))
+        print("{} x {} = {}".format(x,y,x*y))
