@@ -17,3 +17,10 @@ def lowestcommonmultiple(x,y):
     
         bigger += 1
     return lcm
+
+#testing funtion
+
+x = 12
+y = 15
+
+print(lowestcommonmultiple(x,y))
