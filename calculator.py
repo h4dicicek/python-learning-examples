@@ -104,3 +104,7 @@ while True:
     elif (operation == 12):
         x = float(input("Please enter a number: "))
         print(math.radians(x))
+    
+    elif (operation == 13):
+        x = float(input("Please enter a number: "))
+        print(math.sin(math.radians(x)))
