@@ -81,3 +81,10 @@ while True:
     elif (operation == 7):
         x = int(input("Please enter a number: "))
         y = int(input("Please enter a number: "))
+        print(math.gcd(x,y))
+    
+    elif (operation == 8):
+        x = int(input("Please enter a number: "))
+        print(math.log10(x))
+    
+    
