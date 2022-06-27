@@ -77,3 +77,7 @@ while True:
     elif (operation == 6):
         x = int(input("Please enter a number: "))
         print(math.factorial(x))
+    
+    elif (operation == 7):
+        x = int(input("Please enter a number: "))
+        y = int(input("Please enter a number: "))
