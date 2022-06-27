@@ -112,3 +112,10 @@ while True:
     elif (operation == 14):
         x = float(input("Please enter a number: "))
         print(math.cos(math.radians(x)))
+    
+    elif (operation == 15):
+        x = float(input("Please enter a number: "))
+        print(math.tan(math.radians(x)))
+
+    else:
+        break
