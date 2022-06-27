@@ -100,5 +100,7 @@ while True:
     elif (operation == 11):
         x = float(input("Please enter a number: "))
         print(math.degrees(x))
-        
 
+    elif (operation == 12):
+        x = float(input("Please enter a number: "))
+        print(math.radians(x))
