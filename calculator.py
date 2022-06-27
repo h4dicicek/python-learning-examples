@@ -97,5 +97,8 @@ while True:
         x = int(input("Please enter a number: "))
         print(math.sqrt(x))
     
-
+    elif (operation == 11):
+        x = float(input("Please enter a number: "))
+        print(math.degrees(x))
+        
 
