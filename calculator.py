@@ -2,6 +2,7 @@
 
 #we have to import math module to use methods in module.
 
+from cgi import print_environ
 import math
 
 # We have to create table of operations.
@@ -91,3 +92,10 @@ while True:
         x = int(input("Please enter a number: "))
         y = int(input("Please enter a number: "))
         print(math.pow(x,y))
+    
+    elif (operation == 10):
+        x = int(input("Please enter a number: "))
+        print(math.sqrt(x))
+    
+
+
