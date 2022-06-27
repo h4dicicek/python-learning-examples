@@ -16,9 +16,9 @@ Press 1 for add
 
 Press 2 for subtract 
 
-Press 3 for divide 
+Press 3 for multiply 
 
-Press 4 for multiply
+Press 4 for divide
 
 Press 5 for absolute value
 
@@ -55,67 +55,67 @@ while True:
         x = float(input("Please enter a number: "))
         y = float(input("Please enter a number: "))
         print("{} + {} = {}".format(x,y,x+y))
-    
+        break
     elif (operation == 2):
         x = float(input("Please enter a number: "))
         y = float(input("Please enter a number: "))
         print("{} - {} = {}".format(x,y,x-y))
-    
+        break
     elif (operation == 3):
         x = float(input("Please enter a number: "))
         y = float(input("Please enter a number: "))
         print("{} x {} = {}".format(x,y,x*y))
-
+        break
     elif (operation == 4):
         x = float(input("Please enter a number: "))
         y = float(input("Please enter a number: "))
         print("{} ÷ {} = {}".format(x,y,x/y))
-
+        break
     elif (operation == 5):
         x = int(input("Please enter a number: "))
         print(math.fabs(x))
-
+        break
     elif (operation == 6):
         x = int(input("Please enter a number: "))
         print(math.factorial(x))
-    
+        break
     elif (operation == 7):
         x = int(input("Please enter a number: "))
         y = int(input("Please enter a number: "))
         print(math.gcd(x,y))
-    
+        break
     elif (operation == 8):
         x = int(input("Please enter a number: "))
         print(math.log10(x))
-
+        break
     elif (operation == 9):
         x = int(input("Please enter a number: "))
         y = int(input("Please enter a number: "))
         print(math.pow(x,y))
-    
+        break
     elif (operation == 10):
         x = int(input("Please enter a number: "))
         print(math.sqrt(x))
-    
+        break
     elif (operation == 11):
         x = float(input("Please enter a number: "))
         print(math.degrees(x))
-
+        break
     elif (operation == 12):
         x = float(input("Please enter a number: "))
         print(math.radians(x))
-    
+        break
     elif (operation == 13):
         x = float(input("Please enter a number: "))
         print(math.sin(math.radians(x)))
-
+        break
     elif (operation == 14):
         x = float(input("Please enter a number: "))
         print(math.cos(math.radians(x)))
-    
+        break
     elif (operation == 15):
         x = float(input("Please enter a number: "))
         print(math.tan(math.radians(x)))
-
+        break
     else:
         break
