@@ -34,3 +34,5 @@ Table of content:
     - perfectnumber
 
     - greatestcommondivisior
+
+    - lowestcommonmultiple
