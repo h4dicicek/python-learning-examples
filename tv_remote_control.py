@@ -109,3 +109,6 @@ while True:
     
     elif (operation == '5'):
         tv_remote_control.switchChannel()   
+    
+    elif (operation == '6'):
+        tv_remote_control.__len__
