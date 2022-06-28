@@ -97,10 +97,15 @@ while True:
     
     elif (operation == '1'):
         tv_remote_control.tvOn()
-        time.sleep(0.5)
-        print("TV is opening")
     
     elif (operation == '2'):
         tv_remote_control.tvOff()
-        time.sleep(0.5)
-        print("TV is turning off.")
+
+    elif (operation == '3'):
+        tv_remote_control.changeVolume()
+
+    elif (operation == '4'):
+        tv_remote_control.addChannel()
+    
+    elif (operation == '5'):
+        tv_remote_control.switchChannel()   
