@@ -1,3 +1,6 @@
+import random
+import time
+
 # We'll try to make a tv remote control in this file.
 
 # We have to create class.
@@ -21,6 +24,7 @@ class tvRemoteControl():
     
     # tvOn function is for turn on tv
     def tvOn(self, tv_on):
+        time.sleep(0.7)
         print("TV is opening.")
         tv_on = "on"
         self.tv_status = tv_on
@@ -28,9 +32,12 @@ class tvRemoteControl():
     # changeVolume function is for changing tv volume
     def changeVolume(self,volume_change_quantity):
         self.tv_volume += volume_change_quantity
+        time.sleep(0.4)
         print("Volume: ",self.tv_volume)
     
     # tvOff funtion is for turn off tv
     def tvOff(self,tv_off):
+        time.sleep(0.7)
+        print("TV is off.")
         tv_off = "off"
         self.tv_status = tv_off
