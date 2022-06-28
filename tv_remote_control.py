@@ -19,11 +19,13 @@ class tvRemoteControl():
             Channel: {}
         """.format(self.tv_status,self.tv_volume,self.tv_channel))
     
+    # tvOn function is for turn on tv
     def tvOn(self, tv_on):
         print("TV is opening.")
         tv_on = "on"
         self.tv_status = tv_on
 
+    # changeVolume function is for changing tv volume
     def changeVolume(self,volume_change_quantity):
         self.tv_volume += volume_change_quantity
         print("Volume: ",self.tv_volume)
