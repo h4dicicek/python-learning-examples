@@ -18,3 +18,7 @@ class tvRemoteControl():
             Volume: {}
             Channel: {}
         """.format(self.tv_status,self.tv_volume,self.tv_channel))
+    
+    def changeVolume(self,volume_change_quantity):
+        self.tv_volume += volume_change_quantity
+        print("Volume: ",self.tv_volume)
