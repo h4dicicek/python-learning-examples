@@ -10,3 +10,11 @@ class tvRemoteControl():
         self.tv_volume = tv_volume
         self.tv_channel = tv_channel
         self.tv_channel_list = tv_channel_list
+    
+    def tvInformations(self):
+        print("""
+        Informations:
+            Status: {}
+            Volume: {}
+            Channel: {}
+        """.format(self.tv_status,self.tv_volume,self.tv_channel))
