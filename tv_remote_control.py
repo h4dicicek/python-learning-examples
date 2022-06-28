@@ -94,3 +94,13 @@ while True:
 
     if (operation == 'q'):
         print("Exit from operations.")
+    
+    elif (operation == '1'):
+        tv_remote_control.tvOn()
+        time.sleep(0.5)
+        print("TV is opening")
+    
+    elif (operation == '2'):
+        tv_remote_control.tvOff()
+        time.sleep(0.5)
+        print("TV is turning off.")
