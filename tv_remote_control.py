@@ -67,3 +67,6 @@ class tvRemoteControl():
         switchChannel = random.randint(0,len(self.tv_channel_list)-1)
         self.tv_channel = self.tv_channel_list[switchChannel]
         print("Channel: ",self.tv_channel)
+
+    def __len__(self):
+        return(len(self.tv_channel_list))
