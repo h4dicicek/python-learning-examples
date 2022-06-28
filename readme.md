@@ -1,42 +1,44 @@
-This repository is for my learning examples in Python.
+#### _This repository is for my learning examples in Python._
 
-Table of content:
+#### [The course what I use](https://www.udemy.com/share/101W9a3@LtpEeZY0_v_e4JaQxH-wKWOsf2x6ikagkq_hfiZ_X7HpRGCfNg0ma8AYRc4JQri8iA==/)
 
-  -> Basic Data Structures and Objects
+## Table of content:
+---
+#### Basic Data Structures and Objects
 
-    - multiply3num
+- [multiply3num](https://github.com/h4dicicek/python-learning-examples/blob/f79ccdcc06a25a4980cbee79f5c75dd7c07c00b5/multiply3num.py)
+	  
+- [bodymassindex](https://github.com/h4dicicek/python-learning-examples/blob/f79ccdcc06a25a4980cbee79f5c75dd7c07c00b5/bodymassindex.py)
 
-    - bodymassindex
+- [caroilcalculate](https://github.com/h4dicicek/python-learning-examples/blob/f79ccdcc06a25a4980cbee79f5c75dd7c07c00b5/carfuelcalculator.py)
 
-    - caroilcalculate
+- [hypotenusecalculator](https://github.com/h4dicicek/python-learning-examples/blob/f79ccdcc06a25a4980cbee79f5c75dd7c07c00b5/hypotenusecalculator.py)
 
-    - hypotenusecalculator
+#### Conditions
+
+- [advancedbodymassindex](https://github.com/h4dicicek/python-learning-examples/blob/f79ccdcc06a25a4980cbee79f5c75dd7c07c00b5/advancedbodymassindex.py)
+
+- [lettergradecalculator](https://github.com/h4dicicek/python-learning-examples/blob/f79ccdcc06a25a4980cbee79f5c75dd7c07c00b5/lettergradecalculator.py)
+
+- [geometricshapecalculator](https://github.com/h4dicicek/python-learning-examples/blob/f79ccdcc06a25a4980cbee79f5c75dd7c07c00b5/geometricshapecalculator.py)
+
+#### Loops
+
+- [perfectnumbercalculator](https://github.com/h4dicicek/python-learning-examples/blob/f79ccdcc06a25a4980cbee79f5c75dd7c07c00b5/perfectnumbercalculator.py)
+
+- [armstrongnumbercalculator](https://github.com/h4dicicek/python-learning-examples/blob/f79ccdcc06a25a4980cbee79f5c75dd7c07c00b5/armstrongnumbercalculator.py)
+
+- [multiplicationtable](https://github.com/h4dicicek/python-learning-examples/blob/f79ccdcc06a25a4980cbee79f5c75dd7c07c00b5/multiplicationtable.py)
+
+#### Functions
+
+- [perfectnumber](https://github.com/h4dicicek/python-learning-examples/blob/f79ccdcc06a25a4980cbee79f5c75dd7c07c00b5/perfectnumber.py)
+
+- [greatestcommondivisior](https://github.com/h4dicicek/python-learning-examples/blob/f79ccdcc06a25a4980cbee79f5c75dd7c07c00b5/greatestcommondivisior.py)
+
+- [lowestcommonmultiple](https://github.com/h4dicicek/python-learning-examples/blob/f79ccdcc06a25a4980cbee79f5c75dd7c07c00b5/lowestcommonmultiple.py)
 
 
-  -> Conditions
+#### Modules
 
-    - advancedbodymassindex
-
-    - lettergradecalculator
-
-    - geometricshapecalculator
-
-  -> Loops
-
-    - perfectnumbercalculator
-
-    - armstrongnumbercalculator
-
-    - multiplicationtable
-
-  -> Functions
-
-    - perfectnumber
-
-    - greatestcommondivisior
-
-    - lowestcommonmultiple
-
-  -> Modules
-
-    - calculator 
+- [calculator](https://github.com/h4dicicek/python-learning-examples/blob/f79ccdcc06a25a4980cbee79f5c75dd7c07c00b5/calculator.py)
