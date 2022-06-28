@@ -24,25 +24,40 @@ class tvRemoteControl():
     
     # tvOn function is for turn on tv
     def tvOn(self, tv_on):
-        time.sleep(0.7)
-        print("TV is opening.")
-        tv_on = "on"
-        self.tv_status = tv_on
+        if (self.tv_status == "on"):
+            print("TV still on.")
+        else:
+            time.sleep(0.7)
+            tv_on = "on"
+            self.tv_status = tv_on
+            print("TV is opening.")
 
     # changeVolume function is for changing tv volume
-    def changeVolume(self,volume_change_quantity):
-        self.tv_volume += volume_change_quantity
-        time.sleep(0.4)
-        print("Volume: ",self.tv_volume)
+    def changeVolume(self):
+        while True:
+            changeVolumQuantity = input("For lower '<': \nFor higher '>': ")
+
+            if (changeVolumQuantity == "<"):
+                if (self.tv_volume != 0):
+                    self.tv_volume -= 1
+            
+            elif(changeVolumQuantity == ">"):
+                if (self.tv_volume != 100):
+                    self.tv_volume += 1
+            print("TV Volume: {}".format(self.tv_volume))
+        
     
     # tvOff function is for turn off tv
     def tvOff(self,tv_off):
-        time.sleep(0.7)
-        print("TV is off.")
-        tv_off = "off"
-        self.tv_status = tv_off
+        if (self.tv_status == "off"):
+            print("TV still off.")
+        else:
+            time.sleep(0.7)
+            tv_off = "off"
+            self.tv_status = tv_off
+            print("TV is off.")
     
     # addChannel function is for add new channel on Channel list
     def addChannel(self,newChannel):
-        newChannel = str(input("Please enter which channel do you want add on Channel List: "))
+        newChannel = input("Please enter which channel do you want add on Channel List: ")
         self.tv_channel_list.append(newChannel)
