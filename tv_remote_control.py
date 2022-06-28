@@ -65,3 +65,24 @@ class tvRemoteControl():
 
     def __len__(self):
         return(len(self.tv_channel_list))
+
+
+tv_remote_control = tvRemoteControl()
+
+print('''
+TV Operations:
+
+Press 1 for Turn on TV.
+
+Press 2 for Turn off TV.
+
+Press 3 for change TV volume.
+
+Press 4 for Add New Channel.
+
+Press 5 for Change Channel.
+
+Press 6 for learn the number of channels.
+
+Press 7 for TV Informations.
+''')
