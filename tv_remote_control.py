@@ -94,6 +94,7 @@ while True:
 
     if (operation == 'q'):
         print("Exit from operations.")
+        break
     
     elif (operation == '1'):
         tv_remote_control.tvOn()
