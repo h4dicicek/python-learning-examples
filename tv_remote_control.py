@@ -61,3 +61,9 @@ class tvRemoteControl():
     def addChannel(self,newChannel):
         newChannel = input("Please enter which channel do you want add on Channel List: ")
         self.tv_channel_list.append(newChannel)
+   
+    # switchChannel function is for switch between of channels.
+    def switchChannel(self):
+        switchChannel = random.randint(0,len(self.tv_channel_list)-1)
+        self.tv_channel = self.tv_channel_list[switchChannel]
+        print("Channel: ",self.tv_channel)
