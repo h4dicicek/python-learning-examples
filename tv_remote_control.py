@@ -111,4 +111,10 @@ while True:
         tv_remote_control.switchChannel()   
     
     elif (operation == '6'):
-        tv_remote_control.__len__
+        print("Number of Channels:",len(tv_remote_control))
+           
+    elif (operation == '7'):
+        tv_remote_control.__str__
+    
+    else:
+        print("Operation is not found!")
