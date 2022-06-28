@@ -29,3 +29,8 @@ class tvRemoteControl():
     def changeVolume(self,volume_change_quantity):
         self.tv_volume += volume_change_quantity
         print("Volume: ",self.tv_volume)
+    
+    # tvOff funtion is for turn off tv
+    def tvOff(self,tv_off):
+        tv_off = "off"
+        self.tv_status = tv_off
