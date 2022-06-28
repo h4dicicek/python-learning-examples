@@ -85,4 +85,12 @@ Press 5 for Change Channel.
 Press 6 for learn the number of channels.
 
 Press 7 for TV Informations.
+
+Press 'q' for exit.
 ''')
+
+while True:
+    operation = input("Please enter operation: ")
+
+    if (operation == 'q'):
+        print("Exit from operations.")
