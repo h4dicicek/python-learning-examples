@@ -7,3 +7,7 @@ def evenNumber(s):
         return s
     else:
         raise ValueError
+
+# create a list for testing function.
+
+list_1 = [12,32,34,62,8,35,3,654,23,45,2]
