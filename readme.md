@@ -1,52 +1,44 @@
-#### _This repository is for my learning examples in Python._
+# Python Learning Examples
 
-#### [The course what I use](https://www.udemy.com/share/101W9a3@LtpEeZY0_v_e4JaQxH-wKWOsf2x6ikagkq_hfiZ_X7HpRGCfNg0ma8AYRc4JQri8iA==/)
+This repository is for my learning examples in Python.
+
+The course what I use: https://www.udemy.com/share/101W9a3@LtpEeZY0_v_e4JaQxH-wKWOsf2x6ikagkq_hfiZ_X7HpRGCfNg0ma8AYRc4JQri8iA==/
 
 ## Table of content:
----
-#### Basic Data Structures and Objects
+### Basic Data Structures and Objects
 
-- [multiply3num](https://github.com/h4dicicek/python-learning-examples/blob/f79ccdcc06a25a4980cbee79f5c75dd7c07c00b5/multiply3num.py)
-	  
-- [Body Mass Index](https://github.com/h4dicicek/python-learning-examples/blob/f79ccdcc06a25a4980cbee79f5c75dd7c07c00b5/bodymassindex.py)
+- [Multiply 3 Number](basic_data_structures_and_objects/multiply_3_number.py)
+- [Body Mass Index](basic_data_structures_and_objects/body_mass_index.py)
+- [Car Fuel Calculator](basic_data_structures_and_objects/car_fuel_calculator.py)
+- [Hypotenuse Calculator](basic_data_structures_and_objects/hypotenuse_calculator.py)
 
-- [Car Oil Calculator](https://github.com/h4dicicek/python-learning-examples/blob/f79ccdcc06a25a4980cbee79f5c75dd7c07c00b5/carfuelcalculator.py)
+### Conditions
 
-- [Hypotenuse Calculator](https://github.com/h4dicicek/python-learning-examples/blob/f79ccdcc06a25a4980cbee79f5c75dd7c07c00b5/hypotenusecalculator.py)
+- [Advanced Body Mass Index](conditions/advanced_bodymass_index.py)
+- [Letter Grade Calculator](conditions/letter_grade_calculator.py)
+- [Geometric Shape Calculator](conditions/geometric_shape_calculator.py)
 
-#### Conditions
+### Loops
 
-- [Advanced Body Mass Index](https://github.com/h4dicicek/python-learning-examples/blob/f79ccdcc06a25a4980cbee79f5c75dd7c07c00b5/advancedbodymassindex.py)
+- [Perfect Number Calculator](loops/perfect_number_calculator.py)
+- [Armstrong Number Calculator](loops/armstrong_number_calculator.py)
+- [Multiplication Table](loops/multiplication_table.py)
 
-- [Letter Grade Calculator](https://github.com/h4dicicek/python-learning-examples/blob/f79ccdcc06a25a4980cbee79f5c75dd7c07c00b5/lettergradecalculator.py)
+### Functions
 
-- [Geometric Shape Calculator](https://github.com/h4dicicek/python-learning-examples/blob/f79ccdcc06a25a4980cbee79f5c75dd7c07c00b5/geometricshapecalculator.py)
-
-#### Loops
-
-- [Perfect Number Calculator](https://github.com/h4dicicek/python-learning-examples/blob/f79ccdcc06a25a4980cbee79f5c75dd7c07c00b5/perfectnumbercalculator.py)
-
-- [Armstrong Number Calculator](https://github.com/h4dicicek/python-learning-examples/blob/f79ccdcc06a25a4980cbee79f5c75dd7c07c00b5/armstrongnumbercalculator.py)
-
-- [Multiplication Table](https://github.com/h4dicicek/python-learning-examples/blob/f79ccdcc06a25a4980cbee79f5c75dd7c07c00b5/multiplicationtable.py)
-
-#### Functions
-
-- [Perfect Number](https://github.com/h4dicicek/python-learning-examples/blob/f79ccdcc06a25a4980cbee79f5c75dd7c07c00b5/perfectnumber.py)
-
-- [Greatest Common Divisior](https://github.com/h4dicicek/python-learning-examples/blob/f79ccdcc06a25a4980cbee79f5c75dd7c07c00b5/greatestcommondivisior.py)
-
-- [Lowest Common Multiple](https://github.com/h4dicicek/python-learning-examples/blob/f79ccdcc06a25a4980cbee79f5c75dd7c07c00b5/lowestcommonmultiple.py)
+- [Perfect Number](functions/perfect_number.py)
+- [Greatest Common Divisior](functions/greatest_common_divisior.py)
+- [Lowest Common Multiple](functions/lowest_common_multiple.py)
 
 
-#### Modules
+### Modules
 
-- [Calculator](https://github.com/h4dicicek/python-learning-examples/blob/f79ccdcc06a25a4980cbee79f5c75dd7c07c00b5/calculator.py)
+- [Calculator](modules/calculator.py)
 
-#### Object Oriented Programming
+### Object Oriented Programming
 
-- [TV Remote Control](https://github.com/h4dicicek/python-learning-examples/blob/fd162dcea1410ce6a4b215dba0ffe95d42ad9d78/tv_remote_control.py)
+- [TV Remote Control](object_oriented_programming/tv_remote_control.py)
 
-#### Errors and Exceptions
+### Errors and Exceptions
 
-- [Even Number Query](even_number_query.py)
+- [Even Number Query](errors_and_exceptions/even_number_query.py)
