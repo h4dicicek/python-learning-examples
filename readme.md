@@ -49,4 +49,4 @@
 
 #### Errors and Exceptions
 
-- [Even Number Query](https://github.com/h4dicicek/python-learning-examples/blob/c6f4e291cf83c041d59c90047ec9a737092f7fb3/even_number_query.py)
+- [Even Number Query](even_number_query.py)
