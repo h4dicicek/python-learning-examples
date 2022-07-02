@@ -1,4 +1,4 @@
-import random
+from posixpath import split
 import time
 
 # We'll try to make a tv remote control in this file.
@@ -65,6 +65,17 @@ class tvRemoteControl():
         elif (newSwitchChannel == ">"):
             return self.tv_channel_list[+1]
     
+    def switchChannelWithNumber(self):
+        channelNumber = int(input("Please enter a channel number: "))
+        if (channelNumber == 1):
+            return self.tv_channel_list[0]
+        elif (channelNumber == 2):
+            return self.tv_channel_list[1]
+        elif (channelNumber == 3):
+            return self.tv_channel_list[2]
+        elif (channelNumber == 4):
+            return self.tv_channel_list[3]
+        
     def __len__(self):
         return len(self.tv_channel_list)
 
@@ -86,6 +97,8 @@ Press 5 for Change Channel.
 Press 6 for learn the number of channels.
 
 Press 7 for TV Informations.
+
+Press 8 for change channel with number.
 
 Press q for exit.
 ''')
@@ -117,6 +130,8 @@ while True:
            
     elif (operation == "7"):
         print(tv_remote_control.tvInformations())
-    
+
+    elif (operation == "8"):
+        print(tv_remote_control.switchChannelWithNumber())
     else:
         print("Operation is not found!")
