@@ -8,23 +8,23 @@ import time
 class tvRemoteControl():
 
     # define __init__  function
-    def __init__(self,tv_status = "off",tv_volume = 0,tv_channel = "Dmax",tv_channel_list = ["Dmax"]):
+    def __init__(self,tv_status = "off",tv_volume = 0,tv_channel = "1,Dmax",tv_channel_list = ["1,Dmax","2,National Geographic","3,FOX News","4,TLC"]):
         self.tv_status = tv_status
         self.tv_volume = tv_volume
         self.tv_channel = tv_channel
         self.tv_channel_list = tv_channel_list
     
     def tvInformations(self):
-        print("TV Status: {} \nTV Volume: {} \nChannel: {} \nChannel List {}".format(self.tv_status,self.tv_volume,self.tv_channel,self.tv_channel_list))
+        return "TV Status: {} \nTV Volume: {} \nChannel: {} \nChannel List {}".format(self.tv_status,self.tv_volume,self.tv_channel,self.tv_channel_list)
     
     # tvOn function is for turn on tv
     def tvOn(self):
         if (self.tv_status == "on"):
-            print("TV still on.")
+            return "TV still on."
         else:
             time.sleep(0.7)
             self.tv_status = "on"
-            print("TV is opening.")
+            return "TV is opening."
 
     # changeVolume function is for changing tv volume
     def changeVolume(self):
@@ -34,23 +34,22 @@ class tvRemoteControl():
             if (changeVolumQuantity == "<"):
                 if (self.tv_volume != 0):
                     self.tv_volume -= 1
-                    print("TV Volume: {}".format(self.tv_volume))
+                    return "TV Volume: {}".format(self.tv_volume)
             elif(changeVolumQuantity == ">"):
                 if (self.tv_volume != 100):
                     self.tv_volume += 1
-                    print("TV Volume: {}".format(self.tv_volume))
+                    return "TV Volume: {}".format(self.tv_volume)
             else:
-                print("TV Volume changed.")
+                return "TV Volume changed."
                 break
-
     # tvOff function is for turn off tv
     def tvOff(self):
         if (self.tv_status == "off"):
-            print("TV still off.")
+            return "TV still off."
         else:
             time.sleep(0.7)
-            print("TV is turning off.")
             self.tv_status = "off"
+            return "TV is turning off."
 
     # addChannel function is for add new channel on Channel list
     def addChannel(self):
@@ -59,13 +58,15 @@ class tvRemoteControl():
    
     # switchChannel function is for switch between of channels.
     def switchChannel(self):
-        switchChannel = random.randint(0,len(self.tv_channel_list)-1)
-        self.tv_channel = self.tv_channel_list[switchChannel]
-        print("Channel: ",self.tv_channel)
-
+        newSwitchChannel = input("Previous Channel '<': \nNext Channel '>': ")
+        if (newSwitchChannel == "<"):
+            if(self.tv_channel_list != self.tv_channel_list[0]):
+                return self.tv_channel_list[-1]
+        elif (newSwitchChannel == ">"):
+            return self.tv_channel_list[+1]
+    
     def __len__(self):
-        return(len(self.tv_channel_list))
-
+        return len(self.tv_channel_list)
 
 tv_remote_control = tvRemoteControl()
 
@@ -97,25 +98,25 @@ while True:
         break
 
     elif (operation == "1"):
-        tv_remote_control.tvOn()
+        print(tv_remote_control.tvOn())
     
     elif (operation == "2"):
-        tv_remote_control.tvOff()
+        print(tv_remote_control.tvOff())
 
     elif (operation == "3"):
-        tv_remote_control.changeVolume()
+        print(tv_remote_control.changeVolume())
 
     elif (operation == "4"):
-        tv_remote_control.addChannel()
+        print(tv_remote_control.addChannel())
     
     elif (operation == "5"):
-        tv_remote_control.switchChannel()   
+        print(tv_remote_control.switchChannel()) 
     
     elif (operation == "6"):
         print("Number of Channels:",len(tv_remote_control))
            
     elif (operation == "7"):
-        tv_remote_control.tvInformations()
+        print(tv_remote_control.tvInformations())
     
     else:
         print("Operation is not found!")
