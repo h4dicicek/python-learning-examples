@@ -67,15 +67,10 @@ class tvRemoteControl():
     
     def switchChannelWithNumber(self):
         channelNumber = int(input("Please enter a channel number: "))
-        if (channelNumber == 1):
-            return self.tv_channel_list[0]
-        elif (channelNumber == 2):
-            return self.tv_channel_list[1]
-        elif (channelNumber == 3):
-            return self.tv_channel_list[2]
-        elif (channelNumber == 4):
-            return self.tv_channel_list[3]
-        
+        leng = len(self.tv_channel_list)
+        for i in range(1,leng + 1):
+            if (channelNumber == i):
+                return self.tv_channel_list[i -1]
     def __len__(self):
         return len(self.tv_channel_list)
 
