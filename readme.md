@@ -11,6 +11,7 @@ The course what I use: https://www.udemy.com/share/101W9a3@LtpEeZY0_v_e4JaQxH-wK
 - [Body Mass Index](basic_data_structures_and_objects/body_mass_index.py)
 - [Car Fuel Calculator](basic_data_structures_and_objects/car_fuel_calculator.py)
 - [Hypotenuse Calculator](basic_data_structures_and_objects/hypotenuse_calculator.py)
+- [Multiply A few Numbers](basic_data_structures_and_objects/multiply_a_few_number.py)
 
 ### Conditions
 
