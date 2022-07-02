@@ -2,19 +2,18 @@
 
 # First we define a function.
 
-def evenNumber(s):
-    if (s % 2 == 0):
-        return s
+def evenNumber(n):
+    if (n % 2 == 0):
+        return n 
     else:
-        raise ValueError
+        raise ValueError("Its not even number!")
 
 # create a list for testing function.
 
 list_1 = [12,32,34,62,8,35,3,654,23,45,2]
 
 for number in list_1:
-    
     try:
-        print(evenNumber(number))
+        print("Your number is even number ->",evenNumber(number))
     except:
         pass
