@@ -27,21 +27,18 @@ class tvRemoteControl():
             return "TV is opening."
 
     # changeVolume function is for changing tv volume
-    def changeVolume(self):
-        while True:
-            changeVolumQuantity = input("For lower '<': \nFor higher '>': \nExit 'another button': ")
+    def changeVolume(self,changeVolumQuantity):
+        if (changeVolumQuantity == "<"):
+            if (self.tv_volume != 0):
+                self.tv_volume -= 1
+                return "TV Volume: {}".format(self.tv_volume)
+        elif(changeVolumQuantity == ">"):
+            if (self.tv_volume != 100):
+                self.tv_volume += 1
+                return "TV Volume: {}".format(self.tv_volume)
+        else:
+            return "TV Volume changed."
 
-            if (changeVolumQuantity == "<"):
-                if (self.tv_volume != 0):
-                    self.tv_volume -= 1
-                    return "TV Volume: {}".format(self.tv_volume)
-            elif(changeVolumQuantity == ">"):
-                if (self.tv_volume != 100):
-                    self.tv_volume += 1
-                    return "TV Volume: {}".format(self.tv_volume)
-            else:
-                return "TV Volume changed."
-                break
     # tvOff function is for turn off tv
     def tvOff(self):
         if (self.tv_status == "off"):
@@ -52,25 +49,23 @@ class tvRemoteControl():
             return "TV is turning off."
 
     # addChannel function is for add new channel on Channel list
-    def addChannel(self):
-        newChannel = input("Please enter which channel do you want add on Channel List: ")
+    def addChannel(self,newChannel):
         self.tv_channel_list.append(newChannel)
    
     # switchChannel function is for switch between of channels.
-    def switchChannel(self):
-        newSwitchChannel = input("Previous Channel '<': \nNext Channel '>': ")
+    def switchChannel(self,newSwitchChannel):
         if (newSwitchChannel == "<"):
             if(self.tv_channel_list != self.tv_channel_list[0]):
                 return self.tv_channel_list[-1]
         elif (newSwitchChannel == ">"):
             return self.tv_channel_list[+1]
     
-    def switchChannelWithNumber(self):
-        channelNumber = int(input("Please enter a channel number: "))
+    def switchChannelWithNumber(self,channelNumber):
         leng = len(self.tv_channel_list)
         for i in range(1,leng + 1):
             if (channelNumber == i):
                 return self.tv_channel_list[i -1]
+
     def __len__(self):
         return len(self.tv_channel_list)
 
@@ -112,13 +107,16 @@ while True:
         print(tv_remote_control.tvOff())
 
     elif (operation == "3"):
-        print(tv_remote_control.changeVolume())
+        changeVolumQuantity = input("For lower '<': \nFor higher '>': \nExit 'another button': ")
+        print(tv_remote_control.changeVolume(changeVolumQuantity))
 
     elif (operation == "4"):
-        print(tv_remote_control.addChannel())
+        newChannel = input("Please enter which channel do you want add on Channel List: ")
+        print(tv_remote_control.addChannel(newChannel))
     
     elif (operation == "5"):
-        print(tv_remote_control.switchChannel()) 
+        newSwitchChannel = input("Previous Channel '<': \nNext Channel '>': ")
+        print(tv_remote_control.switchChannel(newSwitchChannel)) 
     
     elif (operation == "6"):
         print("Number of Channels:",len(tv_remote_control))
@@ -127,6 +125,7 @@ while True:
         print(tv_remote_control.tvInformations())
 
     elif (operation == "8"):
-        print(tv_remote_control.switchChannelWithNumber())
+        channelNumber = int(input("Please enter a channel number: "))
+        print(tv_remote_control.switchChannelWithNumber(channelNumber))
     else:
         print("Operation is not found!")
