@@ -1,3 +1,4 @@
+from operator import index
 from posixpath import split
 import time
 
@@ -26,6 +27,15 @@ class tvRemoteControl():
             self.tv_status = "on"
             return "TV is opening."
 
+    # tvOff function is for turn off tv
+    def tvOff(self):
+        if (self.tv_status == "off"):
+            return "TV still off."
+        else:
+            time.sleep(0.7)
+            self.tv_status = "off"
+            return "TV is turning off."
+    
     # changeVolume function is for changing tv volume
     def changeVolume(self,changeVolumQuantity):
         if (changeVolumQuantity == "<"):
@@ -39,32 +49,30 @@ class tvRemoteControl():
         else:
             return "TV Volume changed."
 
-    # tvOff function is for turn off tv
-    def tvOff(self):
-        if (self.tv_status == "off"):
-            return "TV still off."
-        else:
-            time.sleep(0.7)
-            self.tv_status = "off"
-            return "TV is turning off."
-
     # addChannel function is for add new channel on Channel list
     def addChannel(self,newChannel):
         self.tv_channel_list.append(newChannel)
+        return newChannel, "is added on channel list."
    
     # switchChannel function is for switch between of channels.
-    def switchChannel(self,newSwitchChannel):
+    def switchChannel(self,newSwitchChannel):    
         if (newSwitchChannel == "<"):
-            if(self.tv_channel_list != self.tv_channel_list[0]):
-                return self.tv_channel_list[-1]
+            ind = self.tv_channel_list.index(self.tv_channel)
+            self.tv_channel = self.tv_channel_list[ind - 1]
+            return self.tv_channel
         elif (newSwitchChannel == ">"):
-            return self.tv_channel_list[+1]
+            ind = self.tv_channel_list.index(self.tv_channel)
+            self.tv_channel = self.tv_channel_list[ind + 1]
+            return self.tv_channel
+        else:
+            pass
     
     def switchChannelWithNumber(self,channelNumber):
         leng = len(self.tv_channel_list)
         for i in range(1,leng + 1):
             if (channelNumber == i):
-                return self.tv_channel_list[i -1]
+                self.tv_channel = self.tv_channel_list[i - 1]
+                return self.tv_channel
 
     def __len__(self):
         return len(self.tv_channel_list)
@@ -107,7 +115,7 @@ while True:
         print(tv_remote_control.tvOff())
 
     elif (operation == "3"):
-        changeVolumQuantity = input("For lower '<': \nFor higher '>': \nExit 'another button': ")
+        changeVolumQuantity = input("For lower '<': \nFor higher '>': ")
         print(tv_remote_control.changeVolume(changeVolumQuantity))
 
     elif (operation == "4"):
@@ -115,8 +123,8 @@ while True:
         print(tv_remote_control.addChannel(newChannel))
     
     elif (operation == "5"):
-        newSwitchChannel = input("Previous Channel '<': \nNext Channel '>': ")
-        print(tv_remote_control.switchChannel(newSwitchChannel)) 
+        newSwitchChannel = input("Previous Channel '<': \nNext Channel '>': \nExit Operation 'another button': ")
+        print(tv_remote_control.switchChannel(newSwitchChannel))
     
     elif (operation == "6"):
         print("Number of Channels:",len(tv_remote_control))
