@@ -47,3 +47,4 @@ The course what I use: https://www.udemy.com/share/101W9a3@LtpEeZY0_v_e4JaQxH-wK
 ### Embedded Functions
 
 - [Area Calculator](embedded_functions/area_calculator.py)
+- [Merge Name and Surname](embedded_functions/merge_name_surname.py)
