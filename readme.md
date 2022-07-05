@@ -43,3 +43,7 @@ The course what I use: https://www.udemy.com/share/101W9a3@LtpEeZY0_v_e4JaQxH-wK
 ### Errors and Exceptions
 
 - [Even Number Query](errors_and_exceptions/even_number_query.py)
+
+### Embedded Functions
+
+- [Area Calculator](embedded_functions/area_calculator.py)
