@@ -4,7 +4,7 @@ This repository is for my learning examples in Python.
 
 The course what I use: https://www.udemy.com/share/101W9a3@LtpEeZY0_v_e4JaQxH-wKWOsf2x6ikagkq_hfiZ_X7HpRGCfNg0ma8AYRc4JQri8iA==/
 
-## Table of content:
+## Table of contents:
 ### Basic Data Structures and Objects
 
 - [Multiply 3 Number](basic_data_structures_and_objects/multiply_3_number.py)
