@@ -52,3 +52,4 @@ The course what I use: https://www.udemy.com/share/101W9a3@LtpEeZY0_v_e4JaQxH-wK
 ### Advanced Data Structures and Objects
 
 - [Letter Count on String](advanced_data_structures_and_objects/letter_count_on_string.py)
+- [Initials of Poem](advanced_data_structures_and_objects/initials_of_poem.py)
