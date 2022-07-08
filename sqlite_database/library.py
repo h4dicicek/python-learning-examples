@@ -45,3 +45,8 @@ class Library():
         else:
             book = Book(books[0][0],books[0][1],books[0][2],books[0][3],books[0][4])
             return book
+
+    def addBook(self,book):
+        query = "INSERT INTO books VALUES(?,?,?,?)"
+        self.cursor.execute(query,(book.name,book.author,book.publisher,book.type))
+        self.conn.commit()
