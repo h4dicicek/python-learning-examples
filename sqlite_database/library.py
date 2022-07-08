@@ -35,3 +35,13 @@ class Library():
             for i in books:
                 book = Book(i[0],i[1],i[2],i[3],i[4])
                 return book
+    
+    def queryBookWithName(self,name):
+        query = "SELECT * FROM books where name = ?"
+        self.cursor.execute(query,(name,))
+        books = self.cursor.fetchall()
+        if (len(books) == 0):
+            return "There are no books with this name."
+        else:
+            book = Book(books[0][0],books[0][1],books[0][2],books[0][3],books[0][4])
+            return book
