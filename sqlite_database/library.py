@@ -50,3 +50,8 @@ class Library():
         query = "INSERT INTO books VALUES(?,?,?,?)"
         self.cursor.execute(query,(book.name,book.author,book.publisher,book.type))
         self.conn.commit()
+    
+    def deleteBook(self,name):
+        query = "DELETE FROM books where name = ?"
+        self.cursor.execute(query,(name,))
+        self.conn.commit()
