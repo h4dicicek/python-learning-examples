@@ -30,11 +30,11 @@ class Library():
         self.cursor.execute(query)
         books = self.cursor.fetchall()
         if (len(books) == 0):
-            return "There are no books yet."
+            print("There are no books yet.")
         else:
             for i in books:
-                book = Book(i[0],i[1],i[2],i[3],i[4])
-                return book
+                book = Book(i[0],i[1],i[2],i[3])
+                print(book)
     
     def queryBookWithName(self,name):
         query = "SELECT * FROM books where name = ?"
