@@ -24,3 +24,14 @@ class Library():
     
     def disconnect(self):
         self.conn.close()
+
+    def showBooks(self):
+        query = "SELECT * FROM books"
+        self.cursor.execute(query)
+        books = self.cursor.fetchall()
+        if (len(books) == 0):
+            return "There are no books yet."
+        else:
+            for i in books:
+                book = Book(i[0],i[1],i[2],i[3],i[4])
+                return book
