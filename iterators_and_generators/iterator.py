@@ -12,3 +12,7 @@ class force3():
         else:
             self.force = 0
             raise StopIteration
+
+force = force3(6)
+for i in force:
+    print(i)
