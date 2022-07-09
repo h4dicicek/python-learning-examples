@@ -67,3 +67,4 @@ The course what I use: https://www.udemy.com/share/101W9a3@LtpEeZY0_v_e4JaQxH-wK
 ### Iterators and Generators
 
 - [Iterator](iterators_and_generators/iterator.py)
+- [Generator](iterators_and_generators/generator.py)
