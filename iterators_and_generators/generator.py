@@ -7,3 +7,7 @@ def fibonacci():
         a,b = b, a + b
         yield b
 
+for i in fibonacci():
+    if (i > 100000):
+        break
+    print(i)
