@@ -6,7 +6,7 @@ print(
 ____________________________
 Operations:
 
-Press 1 for see books.
+Press 1 for get all books.
 
 Press 2 for get book by name.
 
@@ -30,15 +30,40 @@ while True:
         break
 
     elif operation == "1":
-        library.showBooks()
+        books = library.getAllBooks()
+
+        if len(books) == 0:
+            print("There are no books yet.")
+
+        else:
+            for i in books:
+                books = Book(i[0], i[1], i[2], i[3])
+                print(books)
 
     elif operation == "2":
         name = input("Which book do you want to query?: ")
-        print(library.getBookByName(name))
+        book = library.getBookByName(name)
+        if len(book) == 0:
+            print("There are no books with this name.")
+
+        elif len(book) == 1:
+            for i in book:
+                book = Book(i[0], i[1], i[2], i[3])
+                print(book)
+
+        else:
+            print("Please press number 3.")
 
     elif operation == "3":
         name = input("Which book do you want to query?: ")
-        library.getBooksByName(name)
+        books = library.getBooksByName(name)
+        if len(books) > 1:
+            for i in books:
+                book = Book(i[0], i[1], i[2], i[3])
+                print(book)
+
+        else:
+            print("Please press number 2.")
 
     elif operation == "4":
         name = input("Name: ")

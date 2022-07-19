@@ -29,46 +29,23 @@ class Library:
     def disconnect(self):
         self.conn.close()
 
-    def showBooks(self):
+    def getAllBooks(self):
         query = "SELECT * FROM books"
         self.cursor.execute(query)
         books = self.cursor.fetchall()
-
-        if len(books) == 0:
-            print("There are no books yet.")
-
-        else:
-            for i in books:
-                book = Book(i[0], i[1], i[2], i[3])
-                print(book)
+        return books
 
     def getBookByName(self, name):
         query = "SELECT * FROM books where name = ?"
         self.cursor.execute(query, (name,))
-        books = self.cursor.fetchall()
-
-        if len(books) == 0:
-            return "There are no books with this name."
-
-        elif len(books) == 1:
-            for i in books:
-                book = Book(i[0], i[1], i[2], i[3])
-                return book
-
-        else:
-            return "Please press number 3."
+        book = self.cursor.fetchall()
+        return book
 
     def getBooksByName(self, name):
         query = "SELECT * FROM books where name = ?"
         self.cursor.execute(query, (name,))
         books = self.cursor.fetchall()
-
-        if len(books) > 1:
-            for i in books:
-                book = Book(i[0], i[1], i[2], i[3])
-                print(book)
-        else:
-            print("Please press number 2.")
+        return books
 
     def addBook(self, book):
         query = "INSERT INTO books VALUES(?,?,?,?)"
