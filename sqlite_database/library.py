@@ -1,4 +1,3 @@
-from codecs import latin_1_encode
 import sqlite3
 
 
@@ -29,23 +28,23 @@ class Library:
     def disconnect(self):
         self.conn.close()
 
-    def getAllBooks(self):
-        query = "SELECT * FROM books"
-        self.cursor.execute(query)
-        books = self.cursor.fetchall()
-        return books
+    def getBooks(self, name=None):
+        if name is None:
+            query = "SELECT * FROM books"
+            self.cursor.execute(query)
+            books = self.cursor.fetchall()
+            return books
+        else:
+            query = "SELECT * FROM books where name = ?"
+            self.cursor.execute(query, (name,))
+            books = self.cursor.fetchall()
+            return books
 
     def getBookByName(self, name):
         query = "SELECT * FROM books where name = ?"
         self.cursor.execute(query, (name,))
         book = self.cursor.fetchall()
         return book
-
-    def getBooksByName(self, name):
-        query = "SELECT * FROM books where name = ?"
-        self.cursor.execute(query, (name,))
-        books = self.cursor.fetchall()
-        return books
 
     def addBook(self, book):
         query = "INSERT INTO books VALUES(?,?,?,?)"

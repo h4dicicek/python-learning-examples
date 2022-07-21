@@ -30,7 +30,7 @@ while True:
         break
 
     elif operation == "1":
-        books = library.getAllBooks()
+        books = library.getBooks()
 
         if len(books) == 0:
             print("There are no books yet.")
@@ -56,7 +56,7 @@ while True:
 
     elif operation == "3":
         name = input("Which book do you want to query?: ")
-        books = library.getBooksByName(name)
+        books = library.getBooks(name)
         if len(books) > 1:
             for i in books:
                 book = Book(i[0], i[1], i[2], i[3])
