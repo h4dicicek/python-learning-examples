@@ -33,18 +33,16 @@ class Library:
         if name is None:
             query = "SELECT * FROM books"
             self.cursor.execute(query)
-            books = self.cursor.fetchall()
-            return books
         else:
             query = "SELECT * FROM books where name = ?"
             self.cursor.execute(query, (name,))
-            books = self.cursor.fetchall()
-            return books
+        books = self.cursor.fetchall()
+        return books
 
     def getBookByName(self, name):
         query = "SELECT * FROM books where name = ?"
         self.cursor.execute(query, (name,))
-        book = self.cursor.fetchall()
+        book = self.cursor.fetchone()
         return book
 
     def addBook(self, book):
