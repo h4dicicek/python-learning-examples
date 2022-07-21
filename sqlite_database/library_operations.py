@@ -43,16 +43,13 @@ while True:
     elif operation == "2":
         name = input("Which book do you want to query?: ")
         book = library.getBookByName(name)
-        if len(book) == 0:
-            print("There are no books with this name.")
 
-        elif len(book) == 1:
-            for i in book:
-                book = Book(i[0], i[1], i[2], i[3])
-                print(book)
+        if book is None:
+            print("There is no book.")
 
         else:
-            print("Please press number 3.")
+            book = Book(book[0], book[1], book[2], book[3])
+            print(book)
 
     elif operation == "3":
         name = input("Which book do you want to query?: ")
