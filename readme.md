@@ -72,3 +72,7 @@ The course what I use: https://www.udemy.com/share/101W9a3@LtpEeZY0_v_e4JaQxH-wK
 ### Advanced Level Modules
 
 - [IMDB Top 250](advanced_level_modules/imdb_top250.py)
+
+### PyQt5 Projects
+
+- [Create Popup](pyqt5_projects/create_popup.py)
